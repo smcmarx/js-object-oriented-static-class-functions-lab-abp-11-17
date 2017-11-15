@@ -2,15 +2,17 @@
 
 
 class Question {
-  static _All(){
-    return this._All;
-  }
-}
+  constructor(content){
+    this.content = content
+    this.save()
+   }
 
-save () {
-  this.constructor._All.push(this)
-}
+  save () {
+    this.constructor._All.push(this)
+   }
 
-static Find(id){
-  return this._All[id-1]
+  static Find(id){
+    return this._All[id-1]
+   } 
+
 }
