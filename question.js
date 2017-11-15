@@ -3,7 +3,7 @@
 
 class Question {
   static _All(){
-    return this.__All;
+    return this._All;
   }
 }
 
